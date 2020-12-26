@@ -1,0 +1,98 @@
+
+
+.page-wrapper {
+
+height:100%;
+width:100%;
+color:black;
+/* background-image:url('./../../images/1.jpg'); */
+
+  
+}
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width:100%;
+    transform: translate(-50%,-50%);
+    justify-content: center;
+    background-image:url('./../../images/1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+    
+}
+h2 {
+    color:white;
+
+}
+.btn-success {
+    height:30px;
+    background-color: green;
+    float:none;
+}
+.addItem {
+    color:black;
+}
+.row{
+    padding: 20px;
+    width:300px;
+    margin: 0 auto;
+    margin-top: 30px;
+    background:transparent;
+    border-radius: 5px;
+    
+}
+form {
+    display: inline-block;
+}
+
+input {
+    padding: 4px 15px 4px 5px;
+}
+
+#button:hover {
+    cursor: pointer;
+    opacity: .8;
+}
+
+.todo-list {
+    margin: auto;
+    position: absolute;
+    left:42%;
+}
+.strikethrough {
+    padding-left: 20px;
+}
+
+input[type=checkbox]:checked + label.strikethrough{
+    text-decoration: line-through;
+    color:grey;
+  }
+
+
+li:hover{
+      cursor: pointer;
+ }
+
+.symbol-for-remove {
+    background-size:10px;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    color:white;
+  
+
+ }
+
+ i {
+     float:right;
+ }
+
+ .btn-style {
+     padding-right: 5px;
+     float:right;
+    
+     
+ }
+ 

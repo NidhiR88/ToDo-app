@@ -1,0 +1,36 @@
+<!-- <img class="cover" src="./../../images/1.jpg" alt=""> -->
+<div class="page-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main">
+                    <h2>To do List</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+               
+                <div class="addItem">
+                    <form #toDoForm="ngForm">
+                        <input type="text" id="" [(ngModel)]="todo" name="toDoText" required 
+                        #toDoText="ngModel" placeholder="add to your todo-list" class="addText">
+                        
+                        <button type ="submit" class="btn btn-success" (click)="addToDo()">Add</button>
+                        <!-- <div [hidden]="toDoText.invalid || toDoText.pristine" class="alert alert-danger">Please add the text</div> -->
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="todo-item" *ngFor="let todo of todos; let i=index">
+                    <input type="checkbox">
+                    <label class="strikethrough">{{todo}}</label>
+                    <span class="symbol-for-remove" (click)="remove(i)"><i class="fa fa-trash"></i></span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+h2 {
+    color:black;
+}
+.page-wrapper {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+   
+}
+
+#txtbox {
+    font-size: 15px;
+    text-justify: auto;
+    font-style: normal;
+    font-family:Arial, Helvetica, sans-serif;
+    height:45px;
+}
+.form-control {
+    width:100px;
+
+}
+
+
+.delete-item {
+    float:right;
+}
+
+.addText {
+    top:40%;
+    height:50px;
+}
+
+.todo-item {
+    width:100%;
+    
+}

@@ -1,0 +1,34 @@
+<div class="page-wrapper">
+    <div class="row">
+        <div class="col-md-12">
+            <h2><b>Today</b></h2>
+            <h5>{{currentDate | date:'dd-MM-yyyy'}}</h5>
+        </div>
+    </div>
+    <div class="addTask">
+        <form #toDoForm="ngForm">
+            <div class="txt-conatiner">
+                <input type="text" id="txtbox" class="addText" [(ngModel)]="todo" name="toDoText" size="50"
+                    maxLength="2000" required #toDoText="ngModel"
+                    placeholder="eg. Exchequer Mobile-ionic meeting on Monday at 10 am" />
+                <input type="text" placeholder="Datepicker" class="form-control" bsDatepicker />
+            </div>
+            <br>
+            <div class="adding-button">
+                <button type="submit" class="btn btn-success" (click)="addNewTask()">Add task </button>
+            </div>
+        </form>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-mds-6">
+            <div class="todo-item" *ngFor="let todo of todos;let i=index">
+                {{todo}} 
+                <button type="submit" class="delete-item" (click)="remove(i)">delete</button>
+                <hr>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <!-- "node_modules/ngx-bootstrap/datepicker/bs-datepicker.css" -->
